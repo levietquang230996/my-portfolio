@@ -1,0 +1,26 @@
+.portfolio__skills {
+  padding: 50px 0;
+  background-image: url('./../../assets/images/BG_work2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  h1 {
+    padding-bottom: 30px;
+  }
+
+  .portfolio__skills-girds {
+    padding: 50px 0;
+    background-color: #00000042;
+    border-radius: 12px;
+    margin: auto;
+    .ui.grid {
+      justify-content: center;
+      margin: auto 0;
+      .ui.image {
+        margin: auto;
+      }
+    }
+  }
+}

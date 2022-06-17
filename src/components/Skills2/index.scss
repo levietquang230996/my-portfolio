@@ -1,0 +1,131 @@
+.portfolio__skills2 {
+  background-image: url('../../assets/images/BG_work.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .title.text-white {
+    color: #fff;
+    &::after {
+      border-bottom-color: #fff;
+    }
+  }
+
+  @keyframes showText {
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes showText2 {
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
+  .grid {
+    background-color: #fffffff2;
+    margin: 0;
+    padding: 60px 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 41px 0px #ffffffe6;
+    -moz-box-shadow: 0px 0px 41px 0px #ffffffe6;
+    box-shadow: 0px 0px 41px 0px #ffffffe6;
+
+    .bar {
+      margin: 20px 0;
+    }
+    .bar:first-child {
+      margin-top: 0px;
+    }
+    .bar .info {
+      margin-bottom: 5px;
+    }
+    .bar .info span {
+      font-weight: 500;
+      font-size: 17px;
+      opacity: 0;
+      animation: showText 0.5s 1s linear forwards;
+    }
+
+    .bar .progress-line {
+      height: 10px;
+      width: 100%;
+      background: #f0f0f0;
+      position: relative;
+      transform: scaleX(0);
+      transform-origin: left;
+      border-radius: 10px;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
+      animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    }
+
+    .bar .progress-line span {
+      height: 100%;
+      position: absolute;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      background: #000;
+      animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    }
+
+    .progress-line span::before {
+      position: absolute;
+      content: '';
+      top: -10px;
+      right: 0;
+      height: 0;
+      width: 0;
+      border: 7px solid transparent;
+      border-bottom-width: 0px;
+      border-right-width: 0px;
+      border-top-color: #000;
+      opacity: 0;
+      animation: showText2 0.5s 1.5s linear forwards;
+    }
+    .progress-line span::after {
+      position: absolute;
+      top: -28px;
+      right: 0;
+      font-weight: 500;
+      background: #000;
+      color: #fff;
+      padding: 1px 8px;
+      font-size: 12px;
+      border-radius: 3px;
+      opacity: 0;
+      animation: showText2 0.5s 1.5s linear forwards;
+    }
+    .progress-line span::after {
+      content: attr(data-grade) ' %';
+    }
+  }
+
+  // SLIDER
+  .slick-slider {
+    width: 100%;
+    padding: 60px 14px 40px;
+
+    .slick-list {
+      .slick-slide > div {
+        outline: none;
+      }
+      .image {
+        cursor: pointer;
+        margin: auto;
+      }
+    }
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+  }
+}

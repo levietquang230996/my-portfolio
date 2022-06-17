@@ -1,0 +1,19 @@
+.portfolio__footer {
+  padding: 30px 0;
+  // height: 200px;
+  background-color: #000;
+  color: #fff;
+
+  .column {
+    &:first-child .ui.image {
+      height: 90px;
+    }
+    &:not(:first-child) .ui.image {
+      cursor: pointer;
+      height: auto;
+    }
+    i.icon {
+      margin: 10px 0;
+    }
+  }
+}
