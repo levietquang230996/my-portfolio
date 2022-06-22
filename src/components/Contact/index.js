@@ -56,6 +56,7 @@ function Contact() {
                                 <label>Your Request</label>
                             </div>
                             <button>SEND</button>
+                            <div className="clear-both"></div>
                         </div>
                     </GridColumn>
                     <GridColumn mobile={16} tablet={8} computer={8}>

@@ -47,13 +47,12 @@
       .column {
         padding: 0;
         .image {
-          height: 60vh;
+          height: 100%;
           width: 100%;
         }
         button.box-shadow {
-          position: absolute;
-          bottom: 38px;
-          right: 41px;
+          float: right;
+          margin-top: 30px;
           border-radius: 50%;
           width: 72px;
           height: 72px;
@@ -78,5 +77,25 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio__demo .container .row .portfolio__demo-describe .content {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__demo .container .row .column .image {
+    height: 58vh;
+  }
+  .ui.modal > .close {
+    top: 0 !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .portfolio__demo .container .row .column .image {
+    height: 58vh;
   }
 }

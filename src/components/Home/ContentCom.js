@@ -13,7 +13,7 @@ function ContentCom() {
         const options = {
             strings: [
                 `Hello I'm Le Viet Quang`,
-                `Hello I'm a Front-End Developer`
+                `I'm a Front-End Developer`
             ],
             typeSpeed: 60,
             backSpeed: 100,

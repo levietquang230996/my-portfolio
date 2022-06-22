@@ -21,6 +21,8 @@ const imgRight = (dt) => (
             <ModalContentVideo data={dt}>
                 <button className='box-shadow animate__slide-top'>Link</button>
             </ModalContentVideo>
+            <div className='clear-both'></div>
+
         </GridColumn>
     </GridRow>
 );
@@ -31,7 +33,10 @@ const imgLeft = (dt) => (
             className='portfolio__demo-describe'>
             <p className='subTitle'>{dt.title}</p>
             <p className='content'>{dt.content}</p>
-            <ModalContentVideo data={dt}><button className='box-shadow animate__slide-top'>Link</button></ModalContentVideo>
+            <ModalContentVideo data={dt}>
+                <button className='box-shadow animate__slide-top'>Link</button>
+            </ModalContentVideo>
+            <div className='clear-both'></div>
         </GridColumn>
         <GridColumn mobile={16} tablet={8} computer={8}>
             <Image src={dt.img} />

@@ -1,3 +1,21 @@
+// TYPE JS
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .portfolio__home {
   position: relative;
   min-height: 100vh;
@@ -107,22 +125,7 @@
       -webkit-animation: typedjsBlink 0.7s infinite;
       animation: typedjsBlink 0.7s infinite;
     }
-    @keyframes typedjsBlink {
-      50% {
-        opacity: 0;
-      }
-    }
-    @-webkit-keyframes typedjsBlink {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
+
     .typed-fade-out {
       opacity: 0;
       transition: opacity 0.25s;
@@ -174,19 +177,19 @@
     }
     // MENU VERTICAL SLIDE DOWN
     .ui.vertical.menu {
-      top: 2rem;
+      // top: 2rem;
       .item {
         font-size: 26px;
       }
     }
     // CONTENT
     .portfolio__home-content {
-      .container p {
+      .container span {
         &:first-child {
-          font-size: 42px;
+          font-size: 22px;
         }
-        &:nth-child(2) {
-          font-size: 26px;
+        &:last-child {
+          font-size: 20px;
         }
       }
     }

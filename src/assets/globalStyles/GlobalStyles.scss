@@ -4,6 +4,7 @@
 body {
   font-family: 'Montserrat', sans-serif !important;
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 
 .portfolio__aboutMe,
@@ -218,4 +219,11 @@ body {
 .rotate-center {
   -webkit-animation: rotate-center 0.2s ease-in-out both;
   animation: rotate-center 0.2s ease-in-out both;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2.2rem;
+    margin-top: 20px !important;
+  }
 }
